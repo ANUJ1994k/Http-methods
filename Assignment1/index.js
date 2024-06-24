@@ -19,6 +19,7 @@ fetch("https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-count
 
 
 function displayData(data){
+    container.innerHTML = '';
     data.forEach(function(desh){
 
         let card=document.createElement("div");
@@ -59,7 +60,7 @@ function sortDescending(data) {
    
 }
 
-    // Event listeners for sorting buttons
+    // Applying Event listeners for sorting buttons
 
     let sortAscBtn=document.getElementById("sorting-asc");
     let sortDescBtn=document.getElementById("sorting-desc");
