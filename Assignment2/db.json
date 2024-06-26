@@ -5,21 +5,64 @@
       "title": "Task 1",
       "description": "Description for Task 1",
       "status": "Open",
-      "dueDate": "2024-06-10T12:00:00"
+      "dueDate": "2024-06-10T12:00:00",
+      "priority": "high"
     },
     {
       "id": 2,
       "title": "Task 2",
       "description": "Description for Task 2",
       "status": "In Progress",
-      "dueDate": "2024-06-15T14:30:00"
+      "dueDate": "2024-06-15T14:30:00",
+      "priority": "low"
     },
     {
       "id": 3,
       "title": "Task 3",
       "description": "Description for Task 3",
       "status": "Closed",
-      "dueDate": "2024-06-20T10:00:00"
+      "dueDate": "2024-06-20T10:00:00",
+      "priority": "Medium"
+    },
+    {
+      "id": 4,
+      "title": "Task 4",
+      "description": "Description for Task 4",
+      "status": "Open",
+      "dueDate": "2024-06-10T12:00:00",
+      "priority": "low"
+    },
+    {
+      "id": 5,
+      "title": "Task 5",
+      "description": "Description for Task 5",
+      "status": "In Progress",
+      "dueDate": "2024-06-15T14:30:00",
+      "priority": "high"
+    },
+    {
+      "id": 6,
+      "title": "Task 6",
+      "description": "Description for Task 6",
+      "status": "Closed",
+      "dueDate": "2024-06-20T10:00:00",
+      "priority": "Medium"
+    },
+    {
+      "title": "THRILLER",
+      "description": "1920 Returns Love",
+      "status": "in-progress",
+      "dueDate": "2024-06-26",
+      "priority": "high",
+      "id": 7
+    },
+    {
+      "title": "adventures",
+      "description": "Batman",
+      "status": "open",
+      "dueDate": "1998-08-20",
+      "priority": "medium",
+      "id": 8
     }
   ]
 }

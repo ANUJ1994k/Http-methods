@@ -1,8 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const Url = 'http://localhost:3000/tickets';
-    const ticketsTable = document.getElementById('ticketsTable').getElementsByTagName('tbody')[0];
-    const ticketForm = document.getElementById('ticketForm');
-    let editingTicketId = null;
+const Url = 'http://localhost:3000/tickets';
+        const ticketsTable = document.getElementById('ticketsTable').getElementsByTagName('tbody')[0];
+        const ticketForm = document.getElementById('ticketForm');
+        let editedTicketId = null;
 
     // Fetching and displaying tickets
     async function fetchTickets() {
@@ -47,14 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             let response;
-            if (editingTicketId) {
+            if (editedTicketId) {
                 // Update existing ticket
                 response = await fetch(`${Url}/${editingTicketId}`, {
                     method: 'PUT',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(ticketData)
                 });
-                editingTicketId = null;
+                editedTicketId = null;
             } else {
                 // Add new ticket
                 response = await fetch(Url, {
@@ -87,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('dueDate').value = ticket.dueDate;
             document.getElementById('priority').value = ticket.priority;
 
-            editingTicketId = id;
+            editedTicketId = id;
         } catch (error) {
             console.error('Error fetching ticket:', error);
         }
@@ -111,5 +110,5 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Initial fetch of tickets
-    fetchTickets();
-});
+    fetchTickets(Url);
+

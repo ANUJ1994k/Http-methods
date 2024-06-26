@@ -4,7 +4,7 @@ body {
     background-color: cadetblue;
 }
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -15,6 +15,7 @@ table {
 }
 table, th, td {
     border: 1px solid #ccc;
+    font-family: 'Times New Roman', Times, serif;
 }
 th, td {
     padding: 8px;
@@ -43,5 +44,5 @@ th {
     cursor: pointer;
 }
 .form-group button:hover {
-    background-color: #0056b3;
+    background-color: #021324;
 }
